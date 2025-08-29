@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="assets/pumpfork-hero.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pumpfork — testnet landing</title>
+  <meta name="description" content="Pumpfork testnet landing — meme+tech L1, forked from Solana. All values are placeholders for testing."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    pre { tab-size: 2; }
+    .badge-soon{font-size:10px;padding:.125rem .5rem;border-radius:9999px;background:#f4f4f5;color:#3f3f46}
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-zinc-50 to-white text-zinc-900">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-black tracking-tight text-xl">Pumpfork</span>
+        <span class="ml-2 px-2 py-0.5 text-xs bg-emerald-100 text-emerald-700 rounded-full">testnet</span>
+      </div>
+      <nav class="ml-auto hidden md:flex gap-6 text-sm">
+        <a class="hover:text-zinc-600" href="#features">Features</a>
+        <a class="hover:text-zinc-600" href="#specs">Specs</a>
+        <a class="hover:text-zinc-600" href="#dev">Developers</a>
+        <a class="hover:text-zinc-600" href="#ecosystem">Ecosystem</a>
+        <a class="hover:text-zinc-600" href="#docs">Docs</a>
+      </nav>
+      <a href="#launch" class="ml-auto md:ml-0 inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700">
+        Launch Testnet
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 items-center gap-10">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight">
+          Fork the vibes. <span class="text-emerald-600">Keep the throughput.</span>
+        </h1>
+        <p class="mt-5 text-lg text-zinc-600 max-w-prose">
+          Pumpfork is a meme+tech L1 built as a pragmatic fork of Solana. Same Sealevel DNA and PoH+PoS mechanics, wrapped in a community-first narrative.
+          All values on this page are <b>test placeholders</b>.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#launch" class="px-5 py-3 rounded-2xl bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700">Join the Testnet</a>
+          <a href="#docs" class="px-5 py-3 rounded-2xl bg-zinc-900 text-white font-semibold shadow hover:bg-zinc-800">Documentation</a>
+          <a href="https://x.com/pumpforksolana" target="_blank" class="px-5 py-3 rounded-2xl bg-sky-500 text-white font-semibold shadow hover:bg-sky-600">Follow on X</a>
+        </div>
+
+        <!-- Replace stats with CA -->
+        <div class="mt-8 text-sm text-zinc-600">
+          <span class="font-bold text-zinc-900">CA:</span>
+          <code class="px-2 py-1 bg-zinc-100 rounded cursor-pointer" onclick="navigator.clipboard.writeText('SOON')">SOON</code>
+          <span class="ml-2">(click to copy)</span>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -inset-8 bg-emerald-200/40 blur-3xl rounded-full"></div>
+        <div class="relative rounded-3xl p-6 bg-white border border-zinc-200 shadow-xl">
+          <img src="assets/pumpfork-hero.png" alt="Pumpfork mascot" class="w-full h-auto" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-16 border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-black">Why Pumpfork</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="text-lg font-bold">Solana DNA</div>
+          <p class="mt-2 text-zinc-600">Forked from a proven high‑throughput stack: PoH + PoS consensus, Sealevel parallel runtime, fast finality.</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="text-lg font-bold">Fork‑first Tooling</div>
+          <p class="mt-2 text-zinc-600">Batteries‑included RPC, explorer, wallet, and devnet faucets — everything you need to ship.</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="text-lg font-bold">Community Governance</div>
+          <p class="mt-2 text-zinc-600">No presale on testnet. Meme‑powered proposals, on‑chain votes, public RFCs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS (kept minimal) -->
+  <section id="specs" class="py-16 border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-black">Network Specs (test placeholders)</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <ul class="space-y-3 text-zinc-700">
+            <li class="flex items-center justify-between"><span>Consensus</span><span class="font-semibold">PoH + PoS</span></li>
+            <li class="flex items-center justify-between"><span>Runtime</span><span class="font-semibold">Sealevel‑compatible</span></li>
+            <li class="flex items-center justify-between"><span>Smart contracts</span><span class="font-semibold">eBPF‑compatible</span></li>
+          </ul>
+        </div>
+        <!-- endpoints + copy -->
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="font-bold">Public Endpoints (testnet)</div>
+          <div class="mt-4 space-y-3">
+            <div class="flex items-center justify-between gap-2 p-3 bg-zinc-50 rounded-xl border border-zinc-200">
+              <code class="text-sm truncate" id="rpc-http">https://rpc.testnet.pumpfork.org</code>
+              <button class="px-3 py-1.5 rounded-xl bg-zinc-900 text-white text-xs hover:bg-zinc-800" data-copy="#rpc-http">Copy</button>
+            </div>
+            <div class="flex items-center justify-between gap-2 p-3 bg-zinc-50 rounded-xl border border-zinc-200">
+              <code class="text-sm truncate" id="rpc-ws">wss://rpc.testnet.pumpfork.org/ws</code>
+              <button class="px-3 py-1.5 rounded-xl bg-zinc-900 text-white text-xs hover:bg-zinc-800" data-copy="#rpc-ws">Copy</button>
+            </div>
+            <div class="flex items-center justify-between gap-2 p-3 bg-zinc-50 rounded-xl border border-zinc-200">
+              <code class="text-sm truncate" id="explorer">https://explorer.testnet.pumpfork.org</code>
+              <button class="px-3 py-1.5 rounded-xl bg-zinc-900 text-white text-xs hover:bg-zinc-800" data-copy="#explorer">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVS -->
+  <section id="dev" class="py-16 border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-black">Developer Quickstart</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="font-semibold">Install CLI</div>
+          <pre class="mt-3 p-4 bg-zinc-950 text-zinc-50 rounded-xl overflow-auto text-sm"><code>curl -sSL https://get.pumpfork.org | bash
+# then
+pf --version</code></pre>
+          <div class="mt-4 font-semibold">Create a project</div>
+          <pre class="mt-3 p-4 bg-zinc-950 text-zinc-50 rounded-xl overflow-auto text-sm"><code>pf init my-app
+cd my-app
+pf build
+pf deploy --network testnet</code></pre>
+        </div>
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="font-semibold">Connect (TypeScript)</div>
+          <pre class="mt-3 p-4 bg-zinc-950 text-zinc-50 rounded-xl overflow-auto text-sm"><code>import { Connection, Keypair } from "@pumpfork/web3";
+
+const connection = new Connection("https://rpc.testnet.pumpfork.org");
+const wallet = Keypair.generate();
+
+(async () => {
+  const height = await connection.getSlot();
+  console.log("slot:", height);
+})();</code></pre>
+          <div class="mt-4 flex gap-3">
+            <button class="px-3 py-1.5 rounded-xl bg-zinc-900 text-white text-sm" id="copy-example">Copy example</button>
+            <a href="#docs" class="px-3 py-1.5 rounded-xl bg-emerald-600 text-white text-sm shadow hover:bg-emerald-700">More examples</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTATION -->
+  <section id="docs" class="py-16 border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-[240px_1fr] gap-8">
+      <aside class="hidden lg:block">
+        <div class="sticky top-20 space-y-2 text-sm">
+          <a href="#docs-intro" class="block hover:text-zinc-700">Introduction</a>
+          <a href="#docs-endpoints" class="block hover:text-zinc-700">Endpoints</a>
+          <a href="#docs-cli" class="block hover:text-zinc-700">CLI</a>
+          <a href="#docs-programs" class="block hover:text-zinc-700">Programs</a>
+          <a href="#docs-wallets" class="block hover:text-zinc-700">Wallets</a>
+        </div>
+      </aside>
+      <div class="space-y-10">
+        <section id="docs-intro">
+          <h2 class="text-3xl font-black">Pumpfork Documentation (testnet)</h2>
+          <p class="mt-3 text-zinc-600">Pumpfork is a pragmatic fork of Solana focused on high‑throughput execution and meme‑native governance. This documentation is a <b>test build</b>; values and URLs below are placeholders.</p>
+          <div class="mt-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm">Tip: If you’ve built on Solana, you already know 90% of Pumpfork. Tools and SDK names mirror Solana equivalents.</div>
+        </section>
+
+        <section id="docs-endpoints">
+          <h3 class="text-xl font-bold">Public Endpoints</h3>
+          <div class="mt-4 grid sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-white border border-zinc-200">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">HTTP RPC</div>
+              <code class="block mt-1 select-all">https://rpc.testnet.pumpfork.org</code>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-zinc-200">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">WebSocket</div>
+              <code class="block mt-1 select-all">wss://rpc.testnet.pumpfork.org/ws</code>
+            </div>
+          </div>
+          <p class="mt-3 text-sm text-zinc-600">Rate limits are generous on testnet; please avoid abusive load generators.</p>
+        </section>
+
+        <section id="docs-cli">
+          <h3 class="text-xl font-bold">CLI Quickstart</h3>
+          <pre class="mt-3 p-4 bg-zinc-950 text-zinc-50 rounded-xl overflow-auto text-sm"><code>curl -sSL https://get.pumpfork.org | bash
+pf --version
+pf config set network testnet
+pf airdrop 1 Pumpfork1.....test</code></pre>
+        </section>
+
+        <section id="docs-programs">
+          <h3 class="text-xl font-bold">Write & Deploy a Program</h3>
+          <p class="mt-2 text-zinc-600">Programs are eBPF-compatible and built with the Pumpfork SDK. Below is a minimal TypeScript client to fetch the current slot.</p>
+          <pre class="mt-3 p-4 bg-zinc-950 text-zinc-50 rounded-xl overflow-auto text-sm"><code>import { Connection } from "@pumpfork/web3";
+const c = new Connection("https://rpc.testnet.pumpfork.org");
+const slot = await c.getSlot();
+console.log("slot", slot);</code></pre>
+        </section>
+
+        <section id="docs-wallets">
+          <h3 class="text-xl font-bold">Wallets</h3>
+          <p class="mt-2 text-zinc-600">Use Pumpfork Wallet (SOON) or any Solana-compatible wallet that allows setting a custom RPC. Ledger support is planned for testnet.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM (all soon) -->
+  <section id="ecosystem" class="py-16 border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-black">Ecosystem</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-6">
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="flex items-center gap-2"><span class="font-semibold">Forkscan Explorer</span><span class="badge-soon">SOON</span></div>
+          <p class="mt-2 text-zinc-600 text-sm">Block, tx and account explorer for Pumpfork.</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="flex items-center gap-2"><span class="font-semibold">Pumpfork Wallet</span><span class="badge-soon">SOON</span></div>
+          <p class="mt-2 text-zinc-600 text-sm">Lightweight wallet with Ledger support.</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="flex items-center gap-2"><span class="font-semibold">DEX Demo</span><span class="badge-soon">SOON</span></div>
+          <p class="mt-2 text-zinc-600 text-sm">Reference AMM for developers.</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-white border border-zinc-200 shadow-sm">
+          <div class="flex items-center gap-2"><span class="font-semibold">Bridge</span><span class="badge-soon">SOON</span></div>
+          <p class="mt-2 text-zinc-600 text-sm">Adapters to other testnets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAUNCH / CTA -->
+  <section id="launch" class="py-16 border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-black">Ready to fork the pump?</h2>
+      <p class="mt-3 text-zinc-600">Spin up a validator, deploy a program, or just vibe with Pumpfork. It’s all testnet for now.</p>
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <a href="#docs" class="px-5 py-3 rounded-2xl bg-zinc-900 text-white font-semibold shadow hover:bg-zinc-800">Documentation</a>
+        <a href="https://x.com/pumpforksolana" target="_blank" class="px-5 py-3 rounded-2xl bg-sky-500 text-white font-semibold shadow hover:bg-sky-600">Follow on X</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (removed CA display) -->
+  <footer class="py-10 border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-semibold">Pumpfork</span>
+      </div>
+      <div class="text-xs text-zinc-500">© 2025 Pumpfork Testnet • All specs and endpoints here are placeholders for testing.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Copy buttons for endpoints
+    document.querySelectorAll('[data-copy]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var sel = btn.getAttribute('data-copy');
+        var text = document.querySelector(sel).textContent.trim();
+        navigator.clipboard.writeText(text).then(function(){
+          var original = btn.textContent;
+          btn.textContent = 'Copied!';
+          setTimeout(function(){ btn.textContent = 'Copy'; }, 1200);
+        });
+      });
+    });
+    // Copy example
+    document.getElementById('copy-example')?.addEventListener('click', function(){
+      var code = 'import { Connection, Keypair } from "@pumpfork/web3";\n\nconst connection = new Connection("https://rpc.testnet.pumpfork.org");\nconst wallet = Keypair.generate();\n\n(async () => {\n  const height = await connection.getSlot();\n  console.log("slot:", height);\n})();';
+      navigator.clipboard.writeText(code);
+      this.textContent = 'Copied!';
+      setTimeout(()=> this.textContent = 'Copy example', 1200);
+    });
+  </script>
+</body>
+</html>
